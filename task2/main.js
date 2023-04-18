@@ -7,8 +7,18 @@ function FsubmitBtn(value) {
     str = submitValue;
     alert(str);
     topic.push(str);
-    console.log(topic);
-    console.log(topic[5]);
+    //console.log(topic[5]);
+    let millisecsPerDay = 24*60*60*1000;
+    let x=topic.length-1;
+    $("#coursTable").append(    
+        "<tr>"+
+        `<td>${x+1}</td>`+
+        `<td>${(new Date(startDate.getTime() + 7*x*millisecsPerDay)).toLocaleDateString()}</td>`+
+        `<td>${topic[x]}</td>`+
+        "</tr>"
+    );
+    //console.log(topic.length);
+    
     //window.location.replace(window.location.href);
   }
   submitBtn.addEventListener("click", FsubmitBtn);
