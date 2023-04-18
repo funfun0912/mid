@@ -1,0 +1,21 @@
+body{
+    text-align:center;
+    background-color: #080710;
+    color: #ffffff;
+}
+h1{
+    font-size: 75px;
+    text-shadow:
+       5px 5px 0 #ffffff,
+     -1px -1px 0 #ffffff,  
+      1px -1px 0 #ffffff,
+      -1px 1px 0 #ffffff,
+       1px 1px 0 #ffffff;
+    -webkit-text-stroke: 2px #8F5D00;
+    color: coral;
+}
+h2{
+    /*預留歌曲名稱顯示空間*/
+    height:32px;
+    font-size:medium;
+}
